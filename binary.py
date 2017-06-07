@@ -5,7 +5,7 @@ import math
 def binsearch(array):
     "Searches for a number using the binary search algorithm"
     print("Enter input:")
-    inp = input()s
+    inp = input()
     left = 0
     right = len(array) - 1
     mid = int(math.floor((left+right)/2))
