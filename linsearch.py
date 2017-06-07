@@ -8,11 +8,12 @@ def lin(arr):
     while i < len(arr):
 
         if arr[i] == int(inp):
-            print("true")
-            break
+            return "true"
 
         i += 1
         if i == len(arr):
-            print("false")
+            return "false"
 
-lin([1, 4, 2, 3, 8, 4, 12])
+
+print("Enter input:")
+print(lin([1, 4, 2, 3, 8, 4, 12]))

@@ -4,7 +4,6 @@ import math
 
 def binsearch(array):
     "Searches for a number using the binary search algorithm"
-    print("Enter input:")
     inp = input()
     left = 0
     right = len(array) - 1
@@ -18,4 +17,5 @@ def binsearch(array):
         mid = "not found"
     return mid
 
+print("Enter input:")
 print(binsearch([1, 5, 6, 10, 15, 16, 17, 20]))
