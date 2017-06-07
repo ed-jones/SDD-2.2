@@ -1,20 +1,21 @@
+"Binary Search"
+
 import math
 
-A = [1,5,6,10,15,16,17,20]
+def binsearch(array):
+    "Searches for a number using the binary search algorithm"
+    print("Enter input:")
+    inp = input()
+    left = 0
+    right = len(array - 1)
+    mid = int(math.floor((left+right)/2))
+    while array[mid] != inp and mid > 0:
+        if  array[mid] < inp:
+            mid += 1
+        elif array[mid] > inp:
+            mid -= 1
+    if array[mid] != inp:
+        mid = "not found"
+    return mid
 
-def binsearch(A):
-	print("Enter input:")
-	T = input()
-	L = 0
-	R = len(A) - 1
-	m = int(math.floor((L+R)/2))
-	while A[m] != T and m > 0:
-		if  A[m] < T:
-			m+=1
-		elif A[m] > T:
-			m-=1
-	if A[m] != T:
-		m = "not found"
-	return m
-
-print(binsearch(A))
+print(binsearch([1, 5, 6, 10, 15, 16, 17, 20]))

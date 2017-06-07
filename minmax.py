@@ -1,22 +1,21 @@
-arr = [0,1,2,4,5,2,100,-3]
+"Min/Max Program"
 
-def max(arr):
-	m = 0
-	i = 0
-	while i < len(arr):
-		if arr[i] > m:
-			m = arr[i]
-		i += 1
-	print "Max:", m
+def print_max(arr):
+    "Prints maximum value in an array"
+    maximum = 0
+    for i in enumerate(arr):
+        if arr[i] > maximum:
+            maximum = arr[i]
+    return maximum
 
-def min(arr):
-	m = 0
-	i = 0
-	while i < len(arr):
-		if arr[i] < m:
-			m = arr[i]
-		i += 1
-	print "Min:", m
+def print_min(arr):
+    "Prints the minimum value in an array"
+    minimum = 0
+    for i in enumerate(arr):
+        if arr[i] < minimum:
+            minimum = arr[i]
+    return minimum
 
-max(arr)
-min(arr)
+ARRAY = [0, 1, 2, 4, 5, 2, 100, -3]
+print("Max:", max(ARRAY))
+print("Min:", min(ARRAY))
