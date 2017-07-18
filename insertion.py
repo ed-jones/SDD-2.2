@@ -9,4 +9,9 @@ def insertion(array):
             j = j - 1
     return array
 
-print(insertion([1, 5, 4, 3, 2, 10, 61, 54, 23]))
+INPUT_DECIMALS = [ord(c) - 96 for c in input()]
+SORTED_DECIMALS = insertion(INPUT_DECIMALS)
+SORTED_CHARS = [chr(c + 96) for c in SORTED_DECIMALS]
+SORTED_STRING = ''.join(SORTED_CHARS)
+
+print(SORTED_STRING)

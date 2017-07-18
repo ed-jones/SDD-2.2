@@ -11,4 +11,8 @@ def selection(array):
 
     return array
 
-print(selection([22, 43, 111, 1, 23, 67]))
+LIST = ["aa", "a", "aaa", "aaaa", "aaaaa"]
+
+
+
+print(selection(LIST))
